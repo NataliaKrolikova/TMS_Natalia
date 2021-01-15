@@ -1,11 +1,8 @@
 public class HelloWorld {
 	
-	public static void main (String ... args) throws Exception {
+	public static void main (String ... args) {
 		
-		while(true) {
 		System.out.println("Hello TMS group world!!!");
-		Thread.sleep(1000);
-		}
 		
 	}
 	

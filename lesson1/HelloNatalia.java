@@ -1,11 +1,8 @@
 public class HelloNatalia {
 	
-	public static void main (String ... args) throws Exception {
+	public static void main (String ... args) {
 		
-		while(true) {
 		System.out.println("Hello Natalia!!!");
-		Thread.sleep(1000);
-		}
 		
 	}
 	
