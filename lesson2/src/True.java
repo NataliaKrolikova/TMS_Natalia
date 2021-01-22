@@ -1,3 +1,5 @@
+//Дано любое натуральное 4-х значное число. Верно ли, что все цифры числа различны?
+
 public class True {
 
     public static void main(String[] args) {
