@@ -25,6 +25,8 @@ public class TimePrinter {
 
         System.out.println(week + " недель " + day + " дней " + h + " часов " + min + " минут " + sec + " секунд");
 
+
+
     }
 
 }
