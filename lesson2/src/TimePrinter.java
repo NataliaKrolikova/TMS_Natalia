@@ -1,3 +1,5 @@
+//Проверено
+
 public class TimePrinter {
 
     public static void main(String ...args) {
