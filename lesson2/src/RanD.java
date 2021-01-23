@@ -10,15 +10,15 @@ public class RanD {
 
     public static void main(String[] args) {
 
-        int x = rand.nextInt(1000);
+        int x = rand.nextInt(15);
 
-        if (x % 10 == 0 | (x % 10 <=9 & x % 10 >=5) | (x%100>=11 & x%100<=14)) {
+        if (x % 10 == 0 | x % 10 >=5 | x % 100 >=11) {
             System.out.println(x + " рублей");
 
         } else if (x % 10 == 1) {
             System.out.println(x + " рубль");
 
-        } else if (x % 10 >=2 & x % 10 <=4) {
+        } else {
             System.out.println(x + " рубля");
         }
 
