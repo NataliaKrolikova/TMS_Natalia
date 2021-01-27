@@ -7,15 +7,19 @@ public class Homeworkfive {
         int a = -10;
         int b = -15;
         int c = 20;
+        int x = 0;
+        int y = 0;
 
-        if (a>0 & b>0 & c>0) {
-            System.out.println("3 числа положительные");
-        } else if (a<0 & b<0 & c<0) {
-            System.out.println("3 числа отрицательные");
-        } else if ((a<0 & b<0 & c>0) | (a<0 & b>0 & c<0) | (a>0 & b<0 & c<0)) {
-            System.out.println("2 числа отрицательные и 1 положительное");
-        } else if ((a<0 & b>0 & c>0) | (a>0 & b<0 & c>0) | (a>0 & b>0 & c<0)) {
-            System.out.println("1 число отрицательное и 2 положительные");
+        if (a>=0) x = x+1;
+        else y = y+1;
+
+        if (b >= 0) x = x + 1;
+        else y = y + 1;
+
+        if (c >= 0) x = x + 1;
+        else y = y + 1;
+
+        System.out.println("количество отрицательных чисел: " + y);
+        System.out.println("количество положительных чисел: " + x);
         }
     }
-}

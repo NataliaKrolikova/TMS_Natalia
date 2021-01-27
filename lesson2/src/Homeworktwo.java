@@ -12,6 +12,7 @@ public class Homeworktwo {
 
         if (a+b>c && a+c>b && c+b>a ) {
             System.out.println("Треугольник существует");
-        }
+        } else
+            System.out.println("Треугольник не существует");
     }
 }

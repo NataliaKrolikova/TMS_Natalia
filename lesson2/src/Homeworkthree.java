@@ -6,8 +6,16 @@ public class Homeworkthree {
     public static void main(String[] args) {
         int a = -20;
 
-        if (a<0) {
-            System.out.println(a-2);
+        if (a < 0) {
+            System.out.println(a -= 2);
+
+        } else if (a > 0) {
+            System.out.println(a += 1);
+
+        } else if (a == 0) {
+            System.out.println(a==10);
         }
+
     }
+
 }

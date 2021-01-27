@@ -6,10 +6,24 @@ public class Homeworkone {
 
     public static void main(String[] args) {
 
-        int n = 32;
+        int n = -1001;
 
-        if (n<100 & (n>0)) {
-            System.out.println("Число n двузначное положительное число");
+        if (n>=0 & n<=9) {
+            System.out.println("Число " + n +  " однозначное положительное число");
+        } else if (n>=10 & n<=99) {
+            System.out.println("Число " + n + " двузначное положительное число");
+        } else if (n>=100 & n<=999) {
+            System.out.println("Число " + n + " трехзначное положительное число");
+        } else if (n>=1000) {
+            System.out.println("Число " + n + " положительное и в нем более трех цифр");
+        } else if (n<0 & n>=-9) {
+            System.out.println("Число " + n +  " однозначное отрицательное число");
+        } else if (n<=-10 & n>=-99) {
+            System.out.println("Число " + n + " двузначное отрицательное число");
+        } else if (n<=-100 & n>=-999) {
+            System.out.println("Число " + n + " трехзначное отрицательное число");
+        } else {
+            System.out.println("Число " + n + " отрицательное и в нем более трех цифр");
         }
     }
 }

@@ -10,8 +10,9 @@ public class ReversNumber {
         int n3 = (b-n4)/10;
         int n2 = (a-b)/100;
         int n1 = (n-a)/1000;
+        int obratnoe = n4*1000+n3*100+n2*10+n1;
 
         System.out.println(n);
-        System.out.println(n4+""+n3+""+n2+""+n1);
+        System.out.println(obratnoe);
     }
 }

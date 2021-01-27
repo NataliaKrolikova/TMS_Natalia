@@ -12,14 +12,10 @@ public class True {
         int n2 = (a-b)/100;
         int n1 = (n-a)/1000;
 
-        System.out.println(n);
-        System.out.println(n1 != n2);
-        System.out.println(n1 != n3);
-        System.out.println(n1 != n4);
-        System.out.println(n2 != n3);
-        System.out.println(n2 != n4);
-        System.out.println(n3 != n4);
-
+        if ((n1 != n2 & n1 != n3 & n1!=n4) & (n2 != n3 & n2 != n4) & (n3 != n4)) {
+            System.out.println("Все цифры числа " + n + " различны");
+        } else
+            System.out.println("Все цифры числа " + n + " не различны");
 
     }
 }

@@ -12,7 +12,7 @@ public class RanD {
 
         int x = rand.nextInt(1000);
 
-        if (x % 10 == 0 | x % 10 >=5 | x % 100 >=11) {
+        if (x % 10 == 0 | x % 10 >=5 | (x % 100 >=11 & x % 100 <=20)) {
             System.out.println(x + " рублей");
 
         } else if (x % 10 == 1) {

@@ -8,10 +8,10 @@ public class Square {
         int b =2;
         int r = 4;
 
-        if (a*b>2*r) {
-            System.out.println("Прямоугольное отверстие нельзя закрыть круглой картонкой");
+        if (r * r >= (a * a + b * b)) {
+            System.out.println("Можно");
         } else {
-            System.out.println("Прямоугольное отверстие можно закрыть круглой картонкой");
+            System.out.println("Нельзя");
 
         }
 
