@@ -8,7 +8,7 @@ public class Square {
         int b =2;
         int r = 4;
 
-        if (r * r >= (a * a + b * b)) {
+        if (4 * r * r >= (a * a + b * b)) {
             System.out.println("Можно");
         } else {
             System.out.println("Нельзя");

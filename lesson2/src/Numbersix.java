@@ -7,7 +7,7 @@ public class Numbersix {
     public static void main(String[] args) {
 
         int n = 333;
-        int Numberthree = n%100;
+        int Numberthree = n%10;
 
         if (n<1000 & n>99) {
             System.out.println("Число " + n + " является трехзначным");
