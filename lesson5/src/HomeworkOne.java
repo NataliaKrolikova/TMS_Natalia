@@ -11,9 +11,11 @@ public class HomeworkOne {
         double sum = 0;
         double km = 10;
         for (int i = 1; i < 7; i++) {
-            distance = distance + (distance*0.1);
+
+            distance *=1.1;
             sum =km+=distance;
         }
-       System.out.println("За 7 дней спортсмен пробежит " + (int)sum + " км");
+       System.out.println("За 7 дней спортсмен пробежит " + (int)distance + " км");
+
     }
 }

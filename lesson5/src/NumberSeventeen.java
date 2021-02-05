@@ -10,40 +10,27 @@ public class NumberSeventeen {
 
     public static void main(String[] args) {
 
-        char[][] array = new char[2][2];
-        char[][] array2 = new char[4][4];
+        char[][] array = new char[5][5];
+
+        for (int i = 0; i < array.length / 2 + 1; i++) {
+            for (int j = i; j < array.length - i; j++) {
+                array[i][j] = '1';
+            }
+        }
+
+        for (int i = array.length - 1; i > array.length / 2 - 1; i--) {
+            for (int j = i; j > array.length - i - 2; j--) {
+                array[i][j] = '1';
+            }
+        }
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                if (j <= i) {
-                    array[i][j] = '0';
-                    array2[i][j] = '1';
+                if (array[i][j] == '\0') {
+                    array[i][j] = '*';
                 }
-            }
-        }
+                System.out.print(array[i][j] + " ");
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j]);
-                System.out.print(array2[j][i]);
-                System.out.print(array2[j][i]);
-
-            }
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j]);
-            }
-            System.out.println();
-        }
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[j][i]);
-
-
-            }
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array2[i][j]);
-                System.out.print(array2[i][j]);
-                System.out.print(array[j][i]);
             }
             System.out.println();
         }

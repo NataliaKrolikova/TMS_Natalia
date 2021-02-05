@@ -25,7 +25,9 @@ public class NumberSixteen {
            }
 
         }
-        System.out.println("Сумма элементов " + sum);
+
+        System.out.println("Сумма элементов " + (sum-max-min));
+
 
     }
 }
