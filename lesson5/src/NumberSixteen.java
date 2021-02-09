@@ -9,25 +9,26 @@ public class NumberSixteen {
 
         Random rand = new Random();
         int[] array = new int[10];
+        int indexOfMax = 0;
+        int indexOfMin = 0;
         System.out.print("");
 
-        int max = 0;
-        int min = 0;
-        int sum = 0;
         for (int i = 0; i < array.length; i++) {
             array[i] = rand.nextInt(99);
-            sum += array[i];
-           if (max <= array[i]) {
-                max = array[i];
-           } else if (min >= array[i]) {
-               min = array[i];
-
-           }
-
+            if (array[i] > array[indexOfMax]) {
+                indexOfMax = i;
+            } else if (array[i] < array[indexOfMin]) {
+                indexOfMin = i;
+            }
         }
+        System.out.println("The maximum value of the massive is " + array[indexOfMax] + " and its index is " + indexOfMax);
+        System.out.println("The minimum value of the massive is " + array[indexOfMin] + " and its index is " + indexOfMin);
 
-        System.out.println("Сумма элементов " + (sum-max-min));
-
-
+        int sum = 0;
+        for (int a = indexOfMin + 1; a < indexOfMax; a++) {
+            sum += array[a];
+        }
+        System.out.println("The sum of the massive elements between the max and min values equals to " + sum);
+      
     }
 }

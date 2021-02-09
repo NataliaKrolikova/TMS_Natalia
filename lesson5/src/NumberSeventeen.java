@@ -29,8 +29,6 @@ public class NumberSeventeen {
                 if (array[i][j] == '\0') {
                     array[i][j] = '*';
                 }
-                System.out.print(array[i][j] + " ");
-
             }
             System.out.println();
         }
